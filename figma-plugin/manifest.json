@@ -1,0 +1,9 @@
+{
+  "name": "Heurithm Redesign — opusr Tone",
+  "id": "heurithm-redesign-opusr-tone",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ws-client.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page"
+}

@@ -1,0 +1,252 @@
+<svg width="1440" height="4800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', 'Arial', sans-serif; }
+      .en { font-family: 'Montserrat', 'Arial Black', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- =================== NAVIGATION =================== -->
+  <g id="Navigation">
+    <rect width="1440" height="72" fill="#151926"/>
+    <rect y="71" width="1440" height="1" fill="#2a3450"/>
+    <!-- Logo mark -->
+    <rect x="80" y="18" width="36" height="36" rx="8" fill="#f5b510"/>
+    <text x="90" y="40" class="en" font-weight="900" font-size="18" fill="#151926">H</text>
+    <!-- Logo text -->
+    <text x="126" y="41" class="en" font-weight="700" font-size="18" fill="#ffffff">Heurithm</text>
+    <!-- Nav links -->
+    <text x="555" y="41" font-size="14" fill="#8892a4">サービス</text>
+    <text x="665" y="41" font-size="14" fill="#8892a4">会社情報</text>
+    <text x="775" y="41" font-size="14" fill="#8892a4">opusr</text>
+    <text x="865" y="41" font-size="14" fill="#8892a4">ニュース</text>
+    <!-- Ghost btn -->
+    <text x="1070" y="41" font-size="14" fill="#8892a4">お問い合わせ</text>
+    <!-- CTA button -->
+    <rect x="1244" y="18" width="156" height="36" rx="6" fill="#f5b510"/>
+    <text x="1258" y="40" font-weight="600" font-size="13" fill="#151926">opusr を見る →</text>
+  </g>
+
+  <!-- =================== HERO =================== -->
+  <g id="Hero" transform="translate(0,72)">
+    <rect width="1440" height="860" fill="#151926"/>
+    <!-- Background glow -->
+    <ellipse cx="950" cy="380" rx="500" ry="350" fill="#f5b510" fill-opacity="0.04"/>
+    <!-- Grid lines -->
+    <line x1="80" y1="0" x2="80" y2="860" stroke="#2a3450" stroke-opacity="0.3"/>
+    <line x1="360" y1="0" x2="360" y2="860" stroke="#2a3450" stroke-opacity="0.2"/>
+    <line x1="640" y1="0" x2="640" y2="860" stroke="#2a3450" stroke-opacity="0.2"/>
+    <line x1="0" y1="200" x2="1440" y2="200" stroke="#2a3450" stroke-opacity="0.15"/>
+    <line x1="0" y1="440" x2="1440" y2="440" stroke="#2a3450" stroke-opacity="0.15"/>
+    <line x1="0" y1="680" x2="1440" y2="680" stroke="#2a3450" stroke-opacity="0.15"/>
+
+    <!-- Badge -->
+    <rect x="80" y="96" width="244" height="30" rx="100" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.25" stroke-width="1"/>
+    <circle cx="97" cy="111" r="4" fill="#f5b510"/>
+    <text x="110" y="116" font-size="12" font-weight="500" fill="#f5b510">クリエイターと企業をつなぐ</text>
+
+    <!-- Main Title -->
+    <text x="80" y="188" font-size="56" font-weight="900" fill="#ffffff">テクノロジーの力で</text>
+    <text x="80" y="254" font-size="56" font-weight="900" fill="#f5b510">新しい選択肢を</text>
+    <text x="80" y="320" font-size="56" font-weight="900" fill="#ffffff">創出する</text>
+
+    <!-- Subtitle -->
+    <text x="80" y="370" font-size="16" fill="#8892a4">株式会社Heurithm（ヒューリズム）は、クリエイターと企業のビジネス</text>
+    <text x="80" y="395" font-size="16" fill="#8892a4">マッチングを通じて、制作の現場に新たな可能性を届けます。</text>
+
+    <!-- Primary CTA -->
+    <rect x="80" y="428" width="216" height="52" rx="6" fill="#f5b510"/>
+    <text x="104" y="459" font-size="16" font-weight="600" fill="#151926">サービスを見る →</text>
+
+    <!-- Secondary CTA -->
+    <rect x="312" y="428" width="160" height="52" rx="6" fill="none" stroke="#3a4668" stroke-width="1"/>
+    <text x="340" y="459" font-size="16" font-weight="500" fill="#ffffff">会社について</text>
+
+    <!-- Stats divider -->
+    <line x1="80" y1="512" x2="600" y2="512" stroke="#2a3450" stroke-width="1"/>
+
+    <!-- Stats -->
+    <text x="80" y="550" class="en" font-size="32" font-weight="900" fill="#f5b510">2,400+</text>
+    <text x="80" y="578" font-size="12" fill="#8892a4">登録クリエイター数</text>
+    <text x="260" y="550" class="en" font-size="32" font-weight="900" fill="#f5b510">840+</text>
+    <text x="260" y="578" font-size="12" fill="#8892a4">提携企業数</text>
+    <text x="420" y="550" class="en" font-size="32" font-weight="900" fill="#f5b510">98%</text>
+    <text x="420" y="578" font-size="12" fill="#8892a4">マッチング満足度</text>
+
+    <!-- Notification card (floating) -->
+    <rect x="1084" y="68" width="220" height="64" rx="12" fill="#1c2338" stroke="#2a3450" stroke-width="1"/>
+    <rect x="1100" y="84" width="32" height="32" rx="8" fill="#f5b510" fill-opacity="0.15"/>
+    <text x="1109" y="103" font-size="16">🎉</text>
+    <text x="1142" y="90" font-size="11" font-weight="600" fill="#ffffff">新規オファーが届きました</text>
+    <text x="1142" y="108" font-size="10" fill="#8892a4">動画制作 ¥350,000〜</text>
+
+    <!-- Creator card -->
+    <rect x="760" y="144" width="600" height="440" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <text x="784" y="178" font-size="15" font-weight="700" fill="#ffffff">アクティブなクリエイター</text>
+    <!-- Status badge -->
+    <rect x="1280" y="164" width="64" height="24" rx="100" fill="#48dc82" fill-opacity="0.12" stroke="#48dc82" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="1287" y="180" font-size="11" font-weight="600" fill="#48dc82">● Live</text>
+
+    <!-- Creator rows -->
+    <!-- Row 1 -->
+    <rect x="776" y="206" width="568" height="64" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#2a3450" stroke-width="1"/>
+    <rect x="788" y="220" width="36" height="36" rx="18" fill="#4864dc"/>
+    <text x="800" y="243" font-size="14" font-weight="700" fill="#151926">T</text>
+    <text x="836" y="232" font-size="13" font-weight="700" fill="#ffffff">田中 健太</text>
+    <text x="836" y="252" font-size="11" fill="#8892a4">動画クリエイター</text>
+    <text x="1246" y="242" font-size="11" font-weight="600" fill="#f5b510">オファー受付中</text>
+    <!-- Row 2 -->
+    <rect x="776" y="286" width="568" height="64" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#2a3450" stroke-width="1"/>
+    <rect x="788" y="300" width="36" height="36" rx="18" fill="#dc7c48"/>
+    <text x="800" y="323" font-size="14" font-weight="700" fill="#ffffff">S</text>
+    <text x="836" y="312" font-size="13" font-weight="700" fill="#ffffff">鈴木 美咲</text>
+    <text x="836" y="332" font-size="11" fill="#8892a4">UIデザイナー</text>
+    <text x="1246" y="322" font-size="11" font-weight="600" fill="#f5b510">オファー受付中</text>
+    <!-- Row 3 -->
+    <rect x="776" y="366" width="568" height="64" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#2a3450" stroke-width="1"/>
+    <rect x="788" y="380" width="36" height="36" rx="18" fill="#48dc82"/>
+    <text x="800" y="403" font-size="14" font-weight="700" fill="#151926">Y</text>
+    <text x="836" y="392" font-size="13" font-weight="700" fill="#ffffff">山本 拓也</text>
+    <text x="836" y="412" font-size="11" fill="#8892a4">3DCGアーティスト</text>
+    <text x="1246" y="402" font-size="11" font-weight="600" fill="#f5b510">オファー受付中</text>
+    <!-- Row 4 -->
+    <rect x="776" y="446" width="568" height="64" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#2a3450" stroke-width="1"/>
+    <rect x="788" y="460" width="36" height="36" rx="18" fill="#7c48dc"/>
+    <text x="800" y="483" font-size="14" font-weight="700" fill="#ffffff">A</text>
+    <text x="836" y="472" font-size="13" font-weight="700" fill="#ffffff">荒木 千尋</text>
+    <text x="836" y="492" font-size="11" fill="#8892a4">グラフィックデザイナー</text>
+    <text x="1246" y="482" font-size="11" font-weight="600" fill="#f5b510">オファー受付中</text>
+  </g>
+
+  <!-- =================== SERVICES =================== -->
+  <g id="Services" transform="translate(0,933)">
+    <rect width="1440" height="900" fill="#151926"/>
+    <line x1="0" y1="0" x2="1440" y2="0" stroke="#2a3450"/>
+
+    <text x="80" y="100" class="en" font-size="12" font-weight="600" fill="#f5b510">Our Services</text>
+    <text x="80" y="140" font-size="40" font-weight="700" fill="#ffffff">クリエイターと企業の間にある</text>
+    <text x="80" y="188" font-size="40" font-weight="700" fill="#ffffff">ギャップを埋める</text>
+
+    <!-- Card 1 -->
+    <rect x="80" y="270" width="400" height="232" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <rect x="80" y="270" width="400" height="3" rx="2" fill="#f5b510" fill-opacity="0.6"/>
+    <rect x="104" y="294" width="48" height="48" rx="12" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.2" stroke-width="1"/>
+    <text x="118" y="325" font-size="22">🎯</text>
+    <text x="104" y="368" font-size="18" font-weight="700" fill="#ffffff">スマートマッチング</text>
+    <text x="104" y="394" font-size="13" fill="#8892a4">AIを活用したマッチングアルゴリズムにより、</text>
+    <text x="104" y="414" font-size="13" fill="#8892a4">クリエイターと企業のニーズを精度高く結ぶ。</text>
+    <text x="104" y="458" font-size="12" font-weight="600" fill="#f5b510">詳しく見る →</text>
+
+    <!-- Card 2 -->
+    <rect x="504" y="270" width="400" height="232" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <rect x="504" y="270" width="400" height="3" rx="2" fill="#f5b510" fill-opacity="0.6"/>
+    <rect x="528" y="294" width="48" height="48" rx="12" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.2" stroke-width="1"/>
+    <text x="542" y="325" font-size="22">💬</text>
+    <text x="528" y="368" font-size="18" font-weight="700" fill="#ffffff">シームレスなコミュニケーション</text>
+    <text x="528" y="394" font-size="13" fill="#8892a4">プラットフォーム内メッセージでオファーから</text>
+    <text x="528" y="414" font-size="13" fill="#8892a4">契約まで一貫したやり取りが可能。</text>
+    <text x="528" y="458" font-size="12" font-weight="600" fill="#f5b510">詳しく見る →</text>
+
+    <!-- Card 3 -->
+    <rect x="928" y="270" width="432" height="232" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <rect x="928" y="270" width="432" height="3" rx="2" fill="#f5b510" fill-opacity="0.6"/>
+    <rect x="952" y="294" width="48" height="48" rx="12" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.2" stroke-width="1"/>
+    <text x="966" y="325" font-size="22">⚙️</text>
+    <text x="952" y="368" font-size="18" font-weight="700" fill="#ffffff">カスタム条件設定</text>
+    <text x="952" y="394" font-size="13" fill="#8892a4">稼働時間・報酬レンジ・希望ジャンルを</text>
+    <text x="952" y="414" font-size="13" fill="#8892a4">細かく設定。理想の案件だけを受け取れる。</text>
+    <text x="952" y="458" font-size="12" font-weight="600" fill="#f5b510">詳しく見る →</text>
+
+    <!-- Card 4 -->
+    <rect x="80" y="526" width="400" height="232" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <rect x="80" y="526" width="400" height="3" rx="2" fill="#f5b510" fill-opacity="0.6"/>
+    <rect x="104" y="550" width="48" height="48" rx="12" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.2" stroke-width="1"/>
+    <text x="118" y="581" font-size="22">🔍</text>
+    <text x="104" y="624" font-size="18" font-weight="700" fill="#ffffff">案件公開ボード</text>
+    <text x="104" y="650" font-size="13" fill="#8892a4">企業が公開する案件一覧からクリエイターが</text>
+    <text x="104" y="670" font-size="13" fill="#8892a4">自分で応募できる双方向型の仕組み。</text>
+    <text x="104" y="714" font-size="12" font-weight="600" fill="#f5b510">詳しく見る →</text>
+
+    <!-- Card 5 -->
+    <rect x="504" y="526" width="400" height="232" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <rect x="504" y="526" width="400" height="3" rx="2" fill="#f5b510" fill-opacity="0.6"/>
+    <rect x="528" y="550" width="48" height="48" rx="12" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.2" stroke-width="1"/>
+    <text x="542" y="581" font-size="22">📊</text>
+    <text x="528" y="624" font-size="18" font-weight="700" fill="#ffffff">実績・ポートフォリオ管理</text>
+    <text x="528" y="650" font-size="13" fill="#8892a4">クリエイターの作品をプロのポートフォリオ</text>
+    <text x="528" y="670" font-size="13" fill="#8892a4">として公開し、高品質なオファーを誘引。</text>
+    <text x="528" y="714" font-size="12" font-weight="600" fill="#f5b510">詳しく見る →</text>
+
+    <!-- Card 6 -->
+    <rect x="928" y="526" width="432" height="232" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <rect x="928" y="526" width="432" height="3" rx="2" fill="#f5b510" fill-opacity="0.6"/>
+    <rect x="952" y="550" width="48" height="48" rx="12" fill="#f5b510" fill-opacity="0.1" stroke="#f5b510" stroke-opacity="0.2" stroke-width="1"/>
+    <text x="966" y="581" font-size="22">🔒</text>
+    <text x="952" y="624" font-size="18" font-weight="700" fill="#ffffff">安心・安全な取引環境</text>
+    <text x="952" y="650" font-size="13" fill="#8892a4">本人確認・企業審査・エスクロー決済で</text>
+    <text x="952" y="670" font-size="13" fill="#8892a4">双方が安心して取引できる環境。</text>
+    <text x="952" y="714" font-size="12" font-weight="600" fill="#f5b510">詳しく見る →</text>
+  </g>
+
+  <!-- =================== CTA =================== -->
+  <g id="CTA" transform="translate(0,2400)">
+    <rect width="1440" height="480" fill="#151926"/>
+    <line x1="0" y1="0" x2="1440" y2="0" stroke="#2a3450"/>
+    <rect x="80" y="40" width="1280" height="400" rx="20" fill="#1f2840" stroke="#2a3450" stroke-width="1"/>
+    <ellipse cx="720" cy="240" rx="300" ry="150" fill="#f5b510" fill-opacity="0.04"/>
+
+    <text x="640" y="100" class="en" font-size="12" font-weight="600" fill="#f5b510">Get Started</text>
+    <text x="360" y="148" font-size="40" font-weight="700" fill="#ffffff">あなたのクリエイティブを</text>
+    <text x="380" y="198" font-size="40" font-weight="700" fill="#f5b510">ビジネスに変える一歩を</text>
+    <text x="300" y="256" font-size="15" fill="#8892a4">登録無料。作品を公開するだけで、あなたの理想の案件が向こうからやってきます。</text>
+
+    <!-- Primary btn -->
+    <rect x="492" y="300" width="264" height="52" rx="6" fill="#f5b510"/>
+    <text x="510" y="331" font-size="15" font-weight="600" fill="#151926">無料でクリエイター登録 →</text>
+
+    <!-- Secondary btn -->
+    <rect x="772" y="300" width="168" height="52" rx="6" fill="none" stroke="#3a4668" stroke-width="1"/>
+    <text x="804" y="331" font-size="15" font-weight="500" fill="#ffffff">企業様はこちら</text>
+  </g>
+
+  <!-- =================== FOOTER =================== -->
+  <g id="Footer" transform="translate(0,2880)">
+    <rect width="1440" height="400" fill="#1c2338"/>
+    <line x1="0" y1="0" x2="1440" y2="0" stroke="#2a3450"/>
+
+    <!-- Logo -->
+    <rect x="80" y="56" width="36" height="36" rx="8" fill="#f5b510"/>
+    <text x="91" y="79" class="en" font-weight="900" font-size="16" fill="#151926">H</text>
+    <text x="126" y="79" class="en" font-weight="700" font-size="18" fill="#ffffff">Heurithm</text>
+    <text x="80" y="120" font-size="13" fill="#8892a4">テクノロジーの力で新しい選択肢を創出する。</text>
+    <text x="80" y="142" font-size="13" fill="#8892a4">クリエイターと企業をつなぐ「opusr」を運営。</text>
+
+    <!-- Column: Services -->
+    <text x="800" y="76" class="en" font-size="11" font-weight="700" fill="#5a6476">SERVICES</text>
+    <text x="800" y="110" font-size="13" fill="#8892a4">opusr</text>
+    <text x="800" y="142" font-size="13" fill="#8892a4">クリエイター登録</text>
+    <text x="800" y="174" font-size="13" fill="#8892a4">企業向けサービス</text>
+    <text x="800" y="206" font-size="13" fill="#8892a4">料金プラン</text>
+
+    <!-- Column: Company -->
+    <text x="1000" y="76" class="en" font-size="11" font-weight="700" fill="#5a6476">COMPANY</text>
+    <text x="1000" y="110" font-size="13" fill="#8892a4">会社概要</text>
+    <text x="1000" y="142" font-size="13" fill="#8892a4">ミッション</text>
+    <text x="1000" y="174" font-size="13" fill="#8892a4">採用情報</text>
+    <text x="1000" y="206" font-size="13" fill="#8892a4">ニュース</text>
+
+    <!-- Column: Support -->
+    <text x="1200" y="76" class="en" font-size="11" font-weight="700" fill="#5a6476">SUPPORT</text>
+    <text x="1200" y="110" font-size="13" fill="#8892a4">ヘルプセンター</text>
+    <text x="1200" y="142" font-size="13" fill="#8892a4">お問い合わせ</text>
+    <text x="1200" y="174" font-size="13" fill="#8892a4">利用規約</text>
+    <text x="1200" y="206" font-size="13" fill="#8892a4">プライバシーポリシー</text>
+
+    <!-- Bottom -->
+    <line x1="80" y1="340" x2="1360" y2="340" stroke="#2a3450"/>
+    <text x="80" y="364" font-size="12" fill="#5a6476">© 2025 Heurithm Inc. All rights reserved.</text>
+    <text x="1100" y="364" font-size="12" fill="#5a6476">利用規約</text>
+    <text x="1180" y="364" font-size="12" fill="#5a6476">プライバシーポリシー</text>
+    <text x="1300" y="364" font-size="12" fill="#5a6476">特定商取引法</text>
+  </g>
+</svg>

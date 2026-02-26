@@ -1,0 +1,66 @@
+<!-- Figma Plugin UI (WebSocket Bridge) -->
+<!-- Place this in the ui.html of the plugin -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 16px; background: #151926; color: white; }
+    .status { padding: 8px 12px; border-radius: 6px; margin-bottom: 12px; font-size: 13px; }
+    .connected { background: rgba(72,220,130,0.15); border: 1px solid #48dc82; color: #48dc82; }
+    .disconnected { background: rgba(245,85,80,0.15); border: 1px solid #f55550; color: #f55550; }
+    .waiting { background: rgba(245,181,16,0.15); border: 1px solid #f5b510; color: #f5b510; }
+    button { background: #f5b510; color: #151926; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    #log { font-size: 11px; color: #8892a4; max-height: 200px; overflow-y: auto; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div id="status" class="status waiting">接続待機中...</div>
+  <button onclick="connect()">WebSocket接続</button>
+  <div id="log"></div>
+
+  <script>
+    let ws = null;
+    const log = (msg) => {
+      document.getElementById('log').innerHTML += `<div>${msg}</div>`;
+    };
+
+    function connect() {
+      const WS_URL = 'ws://localhost:3030';
+      ws = new WebSocket(WS_URL);
+      document.getElementById('status').textContent = '接続中...';
+      document.getElementById('status').className = 'status waiting';
+
+      ws.onopen = () => {
+        document.getElementById('status').textContent = '✅ 接続済み — デザイン生成を待機中';
+        document.getElementById('status').className = 'status connected';
+        log('Connected to design server');
+        ws.send(JSON.stringify({ type: 'PLUGIN_READY' }));
+      };
+
+      ws.onmessage = (event) => {
+        const msg = JSON.parse(event.data);
+        log('Received: ' + msg.type);
+        parent.postMessage({ pluginMessage: msg }, '*');
+      };
+
+      ws.onclose = () => {
+        document.getElementById('status').textContent = '❌ 切断されました';
+        document.getElementById('status').className = 'status disconnected';
+      };
+
+      ws.onerror = (e) => {
+        document.getElementById('status').textContent = 'エラー: サーバーに接続できません';
+        document.getElementById('status').className = 'status disconnected';
+        log('Error: ' + e.message);
+      };
+    }
+
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+      if (msg && ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify(msg));
+      }
+    };
+  </script>
+</body>
+</html>
