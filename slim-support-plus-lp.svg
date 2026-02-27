@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="5416" viewBox="0 0 390 5416">
+<defs>
+  <linearGradient id="heroGrad" x1="0%" y1="0%" x2="80%" y2="100%">
+    <stop offset="0%" stop-color="#f1f8e9"/>
+    <stop offset="60%" stop-color="#e8f5e9"/>
+    <stop offset="100%" stop-color="#ffffff"/>
+  </linearGradient>
+  <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ff6f00"/>
+    <stop offset="100%" stop-color="#ffa000"/>
+  </linearGradient>
+  <linearGradient id="productImgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#c8e6c9"/>
+    <stop offset="100%" stop-color="#a5d6a7"/>
+  </linearGradient>
+  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#b2dfdb"/>
+    <stop offset="100%" stop-color="#80cbc4"/>
+  </linearGradient>
+  <linearGradient id="finalCtaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#e8f5e9"/>
+    <stop offset="100%" stop-color="#f1f8e9"/>
+  </linearGradient>
+  <filter id="cardShadow" x="-5%" y="-5%" width="115%" height="130%">
+    <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.08"/>
+  </filter>
+  <filter id="smShadow" x="-5%" y="-5%" width="115%" height="125%">
+    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.06"/>
+  </filter>
+</defs>
+
+<!-- ============================================================ -->
+<!-- 1. HEADER  y:0–52                                            -->
+<!-- ============================================================ -->
+<rect x="0" y="0" width="390" height="52" fill="#ffffff"/>
+<line x1="0" y1="51" x2="390" y2="51" stroke="#e0e0e0" stroke-width="1"/>
+<text x="195" y="33" text-anchor="middle"
+  font-family="'Noto Sans JP','Hiragino Kaku Gothic ProN',Meiryo,sans-serif"
+  font-size="17" font-weight="700" fill="#2e7d32" letter-spacing="2">SLIM SUPPORT
+  <tspan fill="#ff6f00">PLUS</tspan>
+</text>
+
+<!-- ============================================================ -->
+<!-- 2. NOTICE BAND  y:52–96                                      -->
+<!-- ============================================================ -->
+<rect x="0" y="52" width="390" height="44" fill="#fffde7"/>
+<line x1="0" y1="52"  x2="390" y2="52"  stroke="#ffcc02" stroke-width="2"/>
+<line x1="0" y1="94"  x2="390" y2="94"  stroke="#ffcc02" stroke-width="2"/>
+<text x="195" y="79" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#795548">
+  &#127381; 定期初回限定 <tspan font-weight="700">50%OFF</tspan> ／ 送料無料 ／ いつでも解約可能
+</text>
+
+<!-- ============================================================ -->
+<!-- 3. HERO  y:96–676 (h:580)                                    -->
+<!-- ============================================================ -->
+<rect x="0" y="96" width="390" height="580" fill="url(#heroGrad)"/>
+
+<!-- eyebrow -->
+<text x="195" y="154" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700"
+  fill="#2e7d32" letter-spacing="1">&#127807; 機能性表示食品</text>
+
+<!-- headline -->
+<text x="195" y="198" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#333">
+  毎日の<tspan fill="#2e7d32">体重・体脂肪ケア</tspan>が
+</text>
+<text x="195" y="228" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#333">
+  続けやすい習慣になる
+</text>
+<!-- sub -->
+<text x="195" y="258" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#666">
+  飲むだけ。たった1日2粒の&#8220;新習慣&#8221;。
+</text>
+
+<!-- product card (y:272, h:250) -->
+<rect x="20" y="272" width="350" height="250" rx="16" fill="#ffffff" filter="url(#cardShadow)"/>
+<!-- product image placeholder -->
+<rect x="95" y="288" width="200" height="130" rx="12" fill="url(#productImgGrad)"/>
+<text x="195" y="368" text-anchor="middle" font-size="48">&#127807;</text>
+<!-- tag -->
+<rect x="140" y="428" width="110" height="22" rx="2" fill="#2e7d32"/>
+<text x="195" y="443" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" font-weight="700" fill="#ffffff">
+  機能性表示食品
+</text>
+<!-- product name -->
+<text x="195" y="470" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#333">
+  スリムサポートプラス
+</text>
+<!-- product subtitle -->
+<text x="195" y="492" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">
+  有胞子性乳酸菌 × 難消化性デキストリン 配合
+</text>
+<!-- badges -->
+<rect x="28"  y="504" width="70"  height="20" rx="10" fill="#e8f5e9" stroke="#c8e6c9" stroke-width="1"/>
+<text x="63"  y="518" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">GMOフリー</text>
+<rect x="104" y="504" width="80"  height="20" rx="10" fill="#e8f5e9" stroke="#c8e6c9" stroke-width="1"/>
+<text x="144" y="518" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">添加物不使用</text>
+<rect x="190" y="504" width="66"  height="20" rx="10" fill="#e8f5e9" stroke="#c8e6c9" stroke-width="1"/>
+<text x="223" y="518" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">国内製造</text>
+<rect x="262" y="504" width="100" height="20" rx="10" fill="#e8f5e9" stroke="#c8e6c9" stroke-width="1"/>
+<text x="312" y="518" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">第三者機関検査済</text>
+
+<!-- CTA button -->
+<rect x="20" y="546" width="350" height="54" rx="27" fill="url(#ctaGrad)" filter="url(#smShadow)"/>
+<text x="195" y="571" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#ffffff">
+  &#127381; 初回50%OFFで今すぐ試す
+</text>
+<text x="195" y="590" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#ffffff">
+  &#10003; 送料無料　&#10003; いつでも解約OK
+</text>
+
+<!-- social proof -->
+<text x="195" y="622" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#666">
+  シリーズ累計出荷数
+</text>
+<text x="195" y="656" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#666">
+  <tspan font-size="30" font-weight="700" fill="#2e7d32">120万袋</tspan>突破（発売から3年）
+</text>
+
+<!-- ============================================================ -->
+<!-- 4. PROBLEM  y:676–1176 (h:500)                               -->
+<!-- ============================================================ -->
+<rect x="0" y="676" width="390" height="500" fill="#f9f9f9"/>
+
+<!-- accent tag -->
+<rect x="20" y="716" width="188" height="24" rx="2" fill="#ff6f00"/>
+<text x="114" y="732" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#ffffff">
+  こんなお悩みありませんか？
+</text>
+
+<!-- title -->
+<text x="195" y="778" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">
+  「頑張っているのに
+</text>
+<text x="195" y="806" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">
+  なかなか変わらない&#8230;」
+</text>
+<!-- divider -->
+<rect x="175" y="824" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- problem list items (each h:42) -->
+<!-- item 1 -->
+<rect x="20" y="840" width="350" height="40" rx="0" fill="#ffffff"/>
+<rect x="20" y="840" width="4"   height="40" fill="#ef9a9a"/>
+<text x="36" y="865" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">… 食事制限をしても体重が落ちにくくなった</text>
+<!-- item 2 -->
+<rect x="20" y="884" width="350" height="40" fill="#ffffff"/>
+<rect x="20" y="884" width="4"   height="40" fill="#ef9a9a"/>
+<text x="36" y="909" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">… 運動しても疲れるだけで結果が出ない</text>
+<!-- item 3 -->
+<rect x="20" y="928" width="350" height="40" fill="#ffffff"/>
+<rect x="20" y="928" width="4"   height="40" fill="#ef9a9a"/>
+<text x="36" y="953" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">… 年齢とともに体型が変わってきた気がする</text>
+<!-- item 4 -->
+<rect x="20" y="972" width="350" height="40" fill="#ffffff"/>
+<rect x="20" y="972" width="4"   height="40" fill="#ef9a9a"/>
+<text x="36" y="997" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">… 夕方になるとどか食いしてしまう</text>
+<!-- item 5 -->
+<rect x="20" y="1016" width="350" height="40" fill="#ffffff"/>
+<rect x="20" y="1016" width="4"  height="40" fill="#ef9a9a"/>
+<text x="36" y="1041" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">… お腹まわりのぽっこりが気になる</text>
+<!-- item 6 -->
+<rect x="20" y="1060" width="350" height="40" fill="#ffffff"/>
+<rect x="20" y="1060" width="4"  height="40" fill="#ef9a9a"/>
+<text x="36" y="1085" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">… 続けやすいダイエットサポートが見つからない</text>
+
+<!-- problem footer note -->
+<rect x="20" y="1112" width="350" height="60" rx="12" fill="#fff3e0" stroke="#ffcc02" stroke-width="2"/>
+<text x="195" y="1137" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#333">
+  それは「腸内環境」と「脂肪代謝」の
+</text>
+<text x="195" y="1159" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#ff6f00">
+  見直しのタイミングかもしれません
+</text>
+
+<!-- ============================================================ -->
+<!-- 5. INTRO  y:1176–1496 (h:320)                                -->
+<!-- ============================================================ -->
+<rect x="0" y="1176" width="390" height="320" fill="#ffffff"/>
+
+<!-- tag -->
+<rect x="20" y="1216" width="100" height="24" rx="2" fill="#2e7d32"/>
+<text x="70" y="1232" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#ffffff">
+  そのお悩みに
+</text>
+
+<!-- title -->
+<text x="195" y="1270" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#333">
+  日本初&#65290;の腸内フローラ改善で
+</text>
+<text x="195" y="1296" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#333">
+  体脂肪をアプローチする新しい選択
+</text>
+<!-- divider -->
+<rect x="175" y="1314" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- intro card -->
+<rect x="20" y="1332" width="350" height="124" rx="16" fill="#e8f5e9"/>
+<text x="195" y="1364" text-anchor="middle" font-size="30">&#127807;</text>
+<text x="195" y="1390" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#333">
+  スリムサポートプラスが選ばれる理由
+</text>
+<text x="195" y="1412" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">
+  腸内環境を整える「有胞子性乳酸菌」と、食後の血糖値上昇を抑える
+</text>
+<text x="195" y="1430" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">
+  「難消化性デキストリン」を独自配合。内側からアプローチします。
+</text>
+
+<!-- footnote -->
+<text x="195" y="1478" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#999">
+  &#65290;2025年4月時点、有胞子性乳酸菌と難消化性デキストリン同時配合の機能性表示食品として（自社調べ）
+</text>
+
+<!-- ============================================================ -->
+<!-- 6. FEATURES  y:1496–1896 (h:400)                             -->
+<!-- ============================================================ -->
+<rect x="0" y="1496" width="390" height="400" fill="#f9f9f9"/>
+
+<!-- title -->
+<text x="195" y="1554" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">
+  3つの特長
+</text>
+<!-- divider -->
+<rect x="175" y="1568" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- feature 1 -->
+<rect x="20" y="1588" width="350" height="80" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<circle cx="54" cy="1628" r="18" fill="#2e7d32"/>
+<text x="54" y="1635" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#ffffff">1</text>
+<text x="84" y="1614" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#333">食後の血中中性脂肪の上昇を抑える</text>
+<text x="84" y="1634" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">機能性関与成分「難消化性デキストリン」が食後に過剰な脂肪が</text>
+<text x="84" y="1650" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">吸収されるのをサポート。機能性表示食品として届出済みです。</text>
+
+<!-- feature 2 -->
+<rect x="20" y="1680" width="350" height="80" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<circle cx="54" cy="1720" r="18" fill="#2e7d32"/>
+<text x="54" y="1727" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#ffffff">2</text>
+<text x="84" y="1706" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#333">腸内環境を整え、毎日スッキリ</text>
+<text x="84" y="1726" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">「有胞子性乳酸菌」は熱や酸に強く生きたまま腸に届きやすい特性が</text>
+<text x="84" y="1742" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">あります。善玉菌を増やし、腸のコンディションを整えます。</text>
+
+<!-- feature 3 -->
+<rect x="20" y="1772" width="350" height="80" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<circle cx="54" cy="1812" r="18" fill="#2e7d32"/>
+<text x="54" y="1819" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#ffffff">3</text>
+<text x="84" y="1798" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#333">食事と一緒に飲むだけ、簡単習慣</text>
+<text x="84" y="1818" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">1日2粒、食事のタイミングで水と一緒に飲むだけ。特別な食事制限は</text>
+<text x="84" y="1834" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">不要です。忙しい方にも続けやすい設計です。</text>
+
+<!-- ============================================================ -->
+<!-- 7. INGREDIENTS  y:1896–2316 (h:420)                          -->
+<!-- ============================================================ -->
+<rect x="0" y="1896" width="390" height="420" fill="#ffffff"/>
+
+<!-- title -->
+<text x="195" y="1956" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">主要成分</text>
+<!-- divider -->
+<rect x="175" y="1970" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- grid 2x2 -->
+<!-- card 1 (left-top) -->
+<rect x="20"  y="1990" width="168" height="128" rx="12" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+<text x="104" y="2022" text-anchor="middle" font-size="26">&#127807;</text>
+<text x="104" y="2048" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">難消化性デキストリン</text>
+<text x="104" y="2064" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">3,000mg</text>
+<text x="104" y="2082" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">食後の血中中性脂肪・血糖値</text>
+<text x="104" y="2098" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">上昇を抑える機能性関与成分</text>
+
+<!-- card 2 (right-top) -->
+<rect x="202" y="1990" width="168" height="128" rx="12" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+<text x="286" y="2022" text-anchor="middle" font-size="26">&#129440;</text>
+<text x="286" y="2048" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">有胞子性乳酸菌</text>
+<text x="286" y="2064" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">30億個</text>
+<text x="286" y="2082" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">胞子の鎧をまとった乳酸菌。</text>
+<text x="286" y="2098" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">熱・酸に強く腸まで届きやすい</text>
+
+<!-- card 3 (left-bottom) -->
+<rect x="20"  y="2130" width="168" height="128" rx="12" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+<text x="104" y="2162" text-anchor="middle" font-size="26">&#127758;</text>
+<text x="104" y="2188" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">ビフィズス菌BB-12</text>
+<text x="104" y="2204" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">20億個</text>
+<text x="104" y="2222" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">腸内フローラのバランス維持を</text>
+<text x="104" y="2238" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">サポートする代表的な善玉菌</text>
+
+<!-- card 4 (right-bottom) -->
+<rect x="202" y="2130" width="168" height="128" rx="12" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+<text x="286" y="2162" text-anchor="middle" font-size="26">&#127819;</text>
+<text x="286" y="2188" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">食物繊維（イヌリン）</text>
+<text x="286" y="2204" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">800mg</text>
+<text x="286" y="2222" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">腸内の善玉菌のエサとなる</text>
+<text x="286" y="2238" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">プレバイオティクス成分。菊芋由来</text>
+
+<!-- note -->
+<rect x="20" y="2272" width="350" height="40" rx="8" fill="#e8f5e9"/>
+<text x="30" y="2292" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">&#9888; 本品は食品衛生法に基づき国内のGMP認定工場で製造しています。</text>
+<text x="30" y="2308" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">機能性表示食品（届出番号：F-XXXX）です。</text>
+
+<!-- ============================================================ -->
+<!-- 8. RESULT  y:2316–2536 (h:220)                               -->
+<!-- ============================================================ -->
+<rect x="0" y="2316" width="390" height="220" fill="#e8f5e9"/>
+
+<!-- title -->
+<text x="195" y="2366" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#333">
+  飲み続けた方のリアルな結果
+</text>
+<!-- divider -->
+<rect x="175" y="2380" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- stat cards -->
+<rect x="20"  y="2396" width="108" height="84" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="74"  y="2438" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="26" font-weight="700" fill="#2e7d32">92%</text>
+<text x="74"  y="2456" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">継続満足度</text>
+<text x="74"  y="2470" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">（3ヶ月後）</text>
+
+<rect x="141" y="2396" width="108" height="84" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="195" y="2434" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#2e7d32">-3.2kg</text>
+<text x="195" y="2456" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">平均体重変化</text>
+<text x="195" y="2470" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">（3ヶ月）</text>
+
+<rect x="262" y="2396" width="108" height="84" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="316" y="2438" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="26" font-weight="700" fill="#2e7d32">88%</text>
+<text x="316" y="2456" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">お腹スッキリ</text>
+<text x="316" y="2470" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">実感率</text>
+
+<!-- note -->
+<text x="195" y="2506" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#999">&#65290;当社モニター調査（n=200名、3ヶ月飲用後のアンケート結果）</text>
+<text x="195" y="2522" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#999">個人差があります。</text>
+
+<!-- ============================================================ -->
+<!-- 9. REVIEWS  y:2536–3016 (h:480)                              -->
+<!-- ============================================================ -->
+<rect x="0" y="2536" width="390" height="480" fill="#f9f9f9"/>
+
+<!-- title -->
+<text x="195" y="2590" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">お客様の声</text>
+<!-- divider -->
+<rect x="175" y="2604" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- review 1 -->
+<rect x="20" y="2622" width="350" height="116" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32"  y="2646" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">T.M さん（43歳・女性）</text>
+<text x="358" y="2646" text-anchor="end" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+<text x="32"  y="2668" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">産後から体重が戻らず悩んでいました。飲み始めて1ヶ月で体の</text>
+<text x="32"  y="2684" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">変化を感じ、3ヶ月後には服のサイズが1サイズ下がりました！</text>
+<text x="32"  y="2700" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">腸の調子もよくなり、毎朝スッキリです。</text>
+<rect x="32"  y="2716" width="60" height="18" rx="9" fill="#e8f5e9"/>
+<text x="62"  y="2729" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">継続3ヶ月</text>
+
+<!-- review 2 -->
+<rect x="20" y="2750" width="350" height="116" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32"  y="2774" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">K.S さん（38歳・女性）</text>
+<text x="358" y="2774" text-anchor="end" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+<text x="32"  y="2796" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">食事制限が続かない私でも、これを飲むだけで意識が変わりました。</text>
+<text x="32"  y="2812" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">お腹周りが少しずつすっきりしてきて、夫にも「変わったね」</text>
+<text x="32"  y="2828" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">と言われました。</text>
+<rect x="32"  y="2844" width="60" height="18" rx="9" fill="#e8f5e9"/>
+<text x="62"  y="2857" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">継続2ヶ月</text>
+
+<!-- review 3 -->
+<rect x="20" y="2878" width="350" height="116" rx="12" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32"  y="2902" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">A.Y さん（51歳・女性）</text>
+<text x="358" y="2902" text-anchor="end" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#ffc107">&#9733;&#9733;&#9733;&#9733;&#9734;</text>
+<text x="32"  y="2924" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">更年期以降、どんな方法を試しても体重が落ちなかったのに、</text>
+<text x="32"  y="2940" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">このサプリを飲み始めてから腸の動きが変わった気がします。</text>
+<text x="32"  y="2956" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">まだ飲み始めて1ヶ月ですが、続けてみようと思います。</text>
+<rect x="32"  y="2972" width="60" height="18" rx="9" fill="#e8f5e9"/>
+<text x="62"  y="2985" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" font-weight="700" fill="#2e7d32">継続1ヶ月</text>
+
+<!-- disclaimer -->
+<text x="195" y="3008" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#999">&#65290;個人の感想です。効果・効能を保証するものではありません。</text>
+
+<!-- ============================================================ -->
+<!-- 10. EXPERT  y:3016–3416 (h:400)                              -->
+<!-- ============================================================ -->
+<rect x="0" y="3016" width="390" height="400" fill="#ffffff"/>
+
+<!-- title -->
+<text x="195" y="3066" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">専門家からのコメント</text>
+<!-- divider -->
+<rect x="175" y="3080" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- expert 1 -->
+<rect x="20" y="3100" width="350" height="132" rx="16" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+<circle cx="70" cy="3158" r="28" fill="url(#avatarGrad)"/>
+<text x="70" y="3168" text-anchor="middle" font-size="24">&#128104;&#8205;&#9877;&#65039;</text>
+<text x="114" y="3122" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">消化器内科医 / 腸内フローラ研究</text>
+<text x="114" y="3140" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#333">田中 誠一 先生</text>
+<text x="114" y="3162" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">腸内環境と体重管理の関係は、近年多くの研究で示されています。</text>
+<text x="114" y="3178" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">乳酸菌と食物繊維の同時摂取は理にかなったアプローチです。</text>
+<text x="114" y="3194" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">継続することで内側からの変化が期待できます。</text>
+<text x="114" y="3218" font-family="'Noto Sans JP',sans-serif" font-size="9" fill="#bbb">※本コメントは医学的な効能を保証するものではありません</text>
+
+<!-- expert 2 -->
+<rect x="20" y="3248" width="350" height="132" rx="16" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+<circle cx="70" cy="3306" r="28" fill="url(#avatarGrad)"/>
+<text x="70" y="3316" text-anchor="middle" font-size="24">&#128105;&#8205;&#9877;&#65039;</text>
+<text x="114" y="3270" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">管理栄養士 / 分子栄養学</text>
+<text x="114" y="3288" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#333">鈴木 明子 先生</text>
+<text x="114" y="3310" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">難消化性デキストリンは機能性関与成分として、食後の中性脂肪</text>
+<text x="114" y="3326" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">上昇を抑える働きが科学的に認められています。毎日の食事と</text>
+<text x="114" y="3342" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">一緒に摂ることで、無理なく脂質代謝をサポートできます。</text>
+<text x="114" y="3366" font-family="'Noto Sans JP',sans-serif" font-size="9" fill="#bbb">※本コメントは医学的な効能を保証するものではありません</text>
+
+<!-- ============================================================ -->
+<!-- 11. HOW TO ORDER  y:3416–3656 (h:240)                        -->
+<!-- ============================================================ -->
+<rect x="0" y="3416" width="390" height="240" fill="#f9f9f9"/>
+
+<!-- title -->
+<text x="195" y="3466" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">ご注文の流れ</text>
+<!-- divider -->
+<rect x="175" y="3480" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- step 1 -->
+<circle cx="82"  cy="3522" r="24" fill="#2e7d32"/>
+<text x="82"  y="3530" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="16" font-weight="700" fill="#ffffff">1</text>
+<text x="82"  y="3562" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">プランを選ぶ</text>
+<text x="82"  y="3578" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">定期コース or 通常購入</text>
+<!-- arrow -->
+<text x="152" y="3530" text-anchor="middle" font-size="14" fill="#4caf50">&#9654;</text>
+
+<!-- step 2 -->
+<circle cx="195" cy="3522" r="24" fill="#2e7d32"/>
+<text x="195" y="3530" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="16" font-weight="700" fill="#ffffff">2</text>
+<text x="195" y="3562" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">フォーム入力</text>
+<text x="195" y="3578" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">氏名・住所・支払い方法</text>
+<!-- arrow -->
+<text x="265" y="3530" text-anchor="middle" font-size="14" fill="#4caf50">&#9654;</text>
+
+<!-- step 3 -->
+<circle cx="308" cy="3522" r="24" fill="#2e7d32"/>
+<text x="308" y="3530" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="16" font-weight="700" fill="#ffffff">3</text>
+<text x="308" y="3562" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">ご自宅に届く</text>
+<text x="308" y="3578" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">最短翌日発送</text>
+
+<!-- ============================================================ -->
+<!-- 12. PRICE / ORDER  y:3656–4236 (h:580)                       -->
+<!-- ============================================================ -->
+<rect x="0" y="3656" width="390" height="580" fill="#ffffff"/>
+
+<!-- title -->
+<text x="195" y="3706" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">今すぐ始める</text>
+<!-- divider -->
+<rect x="175" y="3720" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- recommended badge -->
+<rect x="44" y="3736" width="118" height="22" rx="11" fill="#ff6f00"/>
+<text x="103" y="3751" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" font-weight="700" fill="#ffffff">&#9733; 一番人気</text>
+
+<!-- recommended card -->
+<rect x="20" y="3750" width="172" height="206" rx="16" fill="#fff8f0" stroke="#ff6f00" stroke-width="2"/>
+<text x="106" y="3778" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#666">定期コース（60日分）</text>
+<text x="106" y="3816" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#ff6f00">2,980</text>
+<text x="106" y="3838" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#ff6f00">円</text>
+<text x="106" y="3856" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">（税込 3,278円）</text>
+<text x="106" y="3874" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#aaa" text-decoration="line-through">通常価格 6,480円</text>
+<rect x="54"  y="3880" width="102" height="20" rx="10" fill="#ff1744"/>
+<text x="105" y="3894" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" font-weight="700" fill="#ffffff">初回 50%OFF</text>
+<text x="34"  y="3922" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#333">&#10003; 送料無料</text>
+<text x="34"  y="3938" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#333">&#10003; 2回目以降30%OFF</text>
+<text x="34"  y="3954" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#333">&#10003; いつでも解約OK</text>
+
+<!-- normal card -->
+<rect x="198" y="3750" width="172" height="206" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+<text x="284" y="3778" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#666">通常購入（30日分）</text>
+<text x="284" y="3816" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#ff6f00">3,480</text>
+<text x="284" y="3838" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#ff6f00">円</text>
+<text x="284" y="3856" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">（税込 3,828円）</text>
+<text x="284" y="3874" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#aaa">送料 550円</text>
+<text x="212" y="3922" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#333">&#10003; お試しに最適</text>
+<text x="212" y="3938" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#333">&#10003; 縛りなし</text>
+
+<!-- CTA button -->
+<rect x="20" y="3976" width="350" height="54" rx="27" fill="url(#ctaGrad)" filter="url(#smShadow)"/>
+<text x="195" y="4001" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#ffffff">
+  &#127381; 定期初回50%OFFで申し込む
+</text>
+<text x="195" y="4020" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#ffffff">
+  &#10003; 送料無料　&#10003; 2回目以降もお得　&#10003; いつでも解約可
+</text>
+
+<!-- guarantee -->
+<rect x="20" y="4048" width="350" height="84" rx="12" fill="#e8f5e9" stroke="#c8e6c9" stroke-width="2"/>
+<text x="195" y="4074" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#2e7d32">
+  &#128737; 30日間全額返金保証
+</text>
+<text x="195" y="4096" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">
+  お届けから30日以内にご連絡ください。
+</text>
+<text x="195" y="4114" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">
+  全額返金いたします（初回お届け分1本に限る）。
+</text>
+
+<!-- subscription info -->
+<rect x="20" y="4148" width="350" height="84" rx="12" fill="#e8f5e9"/>
+<text x="32" y="4170" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#2e7d32">&#10003; 定期コースについて</text>
+<text x="32" y="4188" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">・2回目以降は30%OFFの4,536円（税込）でお届けします</text>
+<text x="32" y="4204" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">・お届け間隔は30日・60日から選択可能</text>
+<text x="32" y="4220" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">・次回お届け日の10日前までにいつでも解約できます</text>
+
+<!-- ============================================================ -->
+<!-- 13. FAQ  y:4236–4776 (h:540)                                 -->
+<!-- ============================================================ -->
+<rect x="0" y="4236" width="390" height="540" fill="#f9f9f9"/>
+
+<!-- title -->
+<text x="195" y="4286" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#333">よくあるご質問</text>
+<!-- divider -->
+<rect x="175" y="4300" width="40" height="3" rx="1" fill="#2e7d32"/>
+
+<!-- faq 1 -->
+<rect x="20" y="4318" width="350" height="68" rx="10" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32" y="4342" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Q</text>
+<text x="52" y="4342" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">いつ飲めばいいですか？</text>
+<text x="32" y="4362" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">食事と一緒にお飲みください。朝食・昼食・夕食、どのタイミングでも</text>
+<text x="32" y="4378" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">構いません。毎日同じタイミングで飲む習慣をつけると続けやすくなります。</text>
+
+<!-- faq 2 -->
+<rect x="20" y="4398" width="350" height="68" rx="10" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32" y="4422" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Q</text>
+<text x="52" y="4422" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">副作用はありますか？</text>
+<text x="32" y="4442" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">食品ですので通常の副作用はありません。ただし、まれにお腹が緩くなる</text>
+<text x="32" y="4458" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">場合があります。その際は量を減らすか、医師にご相談ください。</text>
+
+<!-- faq 3 -->
+<rect x="20" y="4478" width="350" height="68" rx="10" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32" y="4502" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Q</text>
+<text x="52" y="4502" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">いつ頃から効果を感じられますか？</text>
+<text x="32" y="4522" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">個人差がありますが、腸内環境の変化を感じるのは2〜4週間が目安です。</text>
+<text x="32" y="4538" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">体重への変化は継続3ヶ月を目標にお飲みいただくことをおすすめします。</text>
+
+<!-- faq 4 -->
+<rect x="20" y="4558" width="350" height="52" rx="10" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32" y="4582" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Q</text>
+<text x="52" y="4582" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">薬との併用は大丈夫ですか？</text>
+<text x="32" y="4600" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">現在薬を服用中の方は、念のため医師や薬剤師にご相談ください。</text>
+
+<!-- faq 5 -->
+<rect x="20" y="4622" width="350" height="68" rx="10" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32" y="4646" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Q</text>
+<text x="52" y="4646" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">解約はいつでもできますか？</text>
+<text x="32" y="4666" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">はい、購入回数の縛りはありません。次回お届け日の10日前までに</text>
+<text x="32" y="4682" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">フリーダイヤルまたはマイページよりお手続きください。</text>
+
+<!-- faq 6 -->
+<rect x="20" y="4702" width="350" height="68" rx="10" fill="#ffffff" filter="url(#smShadow)"/>
+<text x="32" y="4726" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Q</text>
+<text x="52" y="4726" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#333">支払い方法は何が使えますか？</text>
+<text x="32" y="4746" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">クレジットカード（VISA・Mastercard・JCB・AMEX）、Amazon Pay、</text>
+<text x="32" y="4762" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#666">代金引換（+330円）がご利用いただけます。</text>
+
+<!-- ============================================================ -->
+<!-- 14. FINAL CTA  y:4776–5016 (h:240)                           -->
+<!-- ============================================================ -->
+<rect x="0" y="4776" width="390" height="240" fill="url(#finalCtaGrad)"/>
+
+<text x="195" y="4832" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#333">今日から始める、</text>
+<text x="195" y="4860" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#333">内側からのケア。</text>
+<text x="195" y="4892" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#666">毎日1日2粒。それだけで腸と向き合う</text>
+<text x="195" y="4910" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#666">新しい習慣を始めましょう。</text>
+
+<rect x="20" y="4932" width="350" height="54" rx="27" fill="url(#ctaGrad)" filter="url(#smShadow)"/>
+<text x="195" y="4957" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#ffffff">
+  &#127381; 定期初回50%OFFで申し込む
+</text>
+<text x="195" y="4976" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#ffffff">
+  &#10003; 送料無料　&#10003; いつでも解約OK　&#10003; 30日間返金保証
+</text>
+
+<!-- ============================================================ -->
+<!-- 15. COMPANY INFO  y:5016–5296 (h:280)                        -->
+<!-- ============================================================ -->
+<rect x="0" y="5016" width="390" height="280" fill="#ffffff"/>
+<line x1="0" y1="5016" x2="390" y2="5016" stroke="#e0e0e0" stroke-width="1"/>
+
+<text x="20" y="5048" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#333">特定商取引法に基づく表示</text>
+
+<line x1="20" y1="5062" x2="370" y2="5062" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5078" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">販売業者</text>
+<text x="120" y="5078" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">株式会社〇〇ウエルネス</text>
+
+<line x1="20" y1="5090" x2="370" y2="5090" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5106" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">所在地</text>
+<text x="120" y="5106" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">〒100-0000 東京都〇〇区〇〇1-1-1</text>
+
+<line x1="20" y1="5118" x2="370" y2="5118" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5134" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">電話番号</text>
+<text x="120" y="5134" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">0120-XXX-XXX（受付 9:00〜18:00／土日祝除く）</text>
+
+<line x1="20" y1="5146" x2="370" y2="5146" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5162" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">メール</text>
+<text x="120" y="5162" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">support@example.com</text>
+
+<line x1="20" y1="5174" x2="370" y2="5174" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5190" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">送料</text>
+<text x="120" y="5190" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">定期コース：無料 / 通常購入：550円（沖縄・離島除く）</text>
+
+<line x1="20" y1="5202" x2="370" y2="5202" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5218" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">お届け</text>
+<text x="120" y="5218" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">ご注文確認後、2〜5営業日以内に発送</text>
+
+<line x1="20" y1="5230" x2="370" y2="5230" stroke="#e0e0e0" stroke-width="1"/>
+<text x="20"  y="5246" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#666">返品・返金</text>
+<text x="120" y="5246" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">初回のみ30日間全額返金保証。未開封の場合のみ返品対応</text>
+<text x="120" y="5262" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#333">（送料お客様負担）。</text>
+
+<!-- ============================================================ -->
+<!-- 16. FOOTER  y:5296–5416 (h:120)                              -->
+<!-- ============================================================ -->
+<rect x="0" y="5296" width="390" height="120" fill="#333333"/>
+
+<text x="195" y="5328" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#aaaaaa">
+  特定商取引法に基づく表示　プライバシーポリシー　利用規約　お問い合わせ
+</text>
+<text x="195" y="5352" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#cccccc">
+  Copyright &#169; 2025 株式会社〇〇ウエルネス All Rights Reserved.
+</text>
+<text x="195" y="5376" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#888888">
+  本品は機能性表示食品です（届出番号：F-XXXX）。
+</text>
+<text x="195" y="5396" text-anchor="middle"
+  font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#888888">
+  食生活は、主食、主菜、副菜を基本に、食事のバランスを。
+</text>
+
+</svg>
