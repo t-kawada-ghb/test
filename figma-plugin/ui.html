@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      margin: 0; padding: 16px;
+      background: #fff;
+      color: #333;
+    }
+    h3 { margin: 0 0 8px; font-size: 14px; }
+    p  { margin: 0 0 12px; font-size: 12px; color: #666; }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #2e7d32;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #1b5e20; }
+  </style>
+</head>
+<body>
+  <h3>🌿 スリムサポートプラス LP</h3>
+  <p>ボタンを押すとFigma上にLPデザインを自動生成します。</p>
+  <button id="btn">デザインを生成する</button>
+  <script>
+    document.getElementById('btn').addEventListener('click', () => {
+      parent.postMessage({ pluginMessage: { type: 'generate' } }, '*');
+    });
+  </script>
+</body>
+</html>
