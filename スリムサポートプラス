@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スリムサポートプラス | 機能性表示食品</title>
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      color: #333;
+      line-height: 1.7;
+      background: #fff;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== COLORS ===== */
+    :root {
+      --green: #2e7d32;
+      --green-light: #4caf50;
+      --green-pale: #e8f5e9;
+      --green-mid: #c8e6c9;
+      --accent: #ff6f00;
+      --accent-light: #ffa000;
+      --text: #333;
+      --text-light: #666;
+      --border: #e0e0e0;
+      --bg-gray: #f9f9f9;
+    }
+
+    /* ===== UTILITY ===== */
+    .container { max-width: 780px; margin: 0 auto; padding: 0 16px; }
+    .section { padding: 60px 0; }
+    .section-title {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .tag--accent { background: var(--accent); }
+    .divider {
+      width: 40px; height: 3px;
+      background: var(--green);
+      margin: 12px auto 32px;
+    }
+
+    /* ===== CTA BUTTON ===== */
+    .cta-btn {
+      display: block;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+      color: #fff;
+      text-align: center;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      font-weight: 700;
+      padding: 18px 24px;
+      border-radius: 50px;
+      box-shadow: 0 4px 16px rgba(255,111,0,0.4);
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      max-width: 480px;
+      margin: 0 auto;
+      letter-spacing: 0.05em;
+    }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,111,0,0.5); }
+    .cta-btn small { display: block; font-size: 0.75rem; font-weight: 400; margin-top: 4px; opacity: 0.9; }
+
+    /* ===== FLOATING CTA ===== */
+    .float-cta {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #fff;
+      padding: 10px 16px 16px;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+      z-index: 1000;
+    }
+    .float-cta .cta-btn { font-size: 1rem; padding: 14px 24px; }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 900;
+    }
+    .header-logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: 0.1em;
+    }
+    .header-logo span { color: var(--accent); }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(160deg, #f1f8e9 0%, #e8f5e9 60%, #fff 100%);
+      padding: 48px 0 40px;
+    }
+    .hero-eyebrow {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--green);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+    }
+    .hero-headline {
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .hero-headline em {
+      font-style: normal;
+      color: var(--green);
+      border-bottom: 3px solid var(--green-light);
+    }
+    .hero-sub {
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+    .hero-product {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .hero-product-img {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+      border-radius: 12px;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .hero-badges {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .badge {
+      background: var(--green-pale);
+      border: 1px solid var(--green-mid);
+      color: var(--green);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .hero-social-proof {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 20px;
+    }
+    .hero-social-proof strong { color: var(--green); font-size: 1.4rem; }
+
+    /* ===== PROBLEM ===== */
+    .problem { background: var(--bg-gray); }
+    .problem-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .problem-list li {
+      background: #fff;
+      border-left: 4px solid #ef9a9a;
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .problem-list li::before {
+      content: '…';
+      font-size: 1.2rem;
+      color: #ef9a9a;
+      flex-shrink: 0;
+    }
+    .problem-footer {
+      background: #fff3e0;
+      border: 2px solid #ffcc02;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .problem-footer strong { color: var(--accent); font-size: 1.15rem; }
+
+    /* ===== INTRO ===== */
+    .intro-card {
+      background: var(--green-pale);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .intro-card h3 { font-size: clamp(1.2rem, 3.5vw, 1.5rem); margin-bottom: 12px; }
+    .intro-card p { font-size: 0.95rem; color: var(--text); line-height: 1.8; }
+
+    /* ===== FEATURES ===== */
+    .features { background: var(--bg-gray); }
+    .feature-list {
+      display: grid;
+      gap: 20px;
+    }
+    .feature-item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .feature-num {
+      background: var(--green);
+      color: #fff;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 700;
+      flex-shrink: 0;
+    }
+    .feature-body h4 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .feature-body p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
+
+    /* ===== INGREDIENTS ===== */
+    .ingredient-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .ingredient-card {
+      border: 2px solid var(--green-mid);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .ingredient-icon { font-size: 2.5rem; margin-bottom: 10px; }
+    .ingredient-card h4 { font-size: 0.95rem; font-weight: 700; color: var(--green); margin-bottom: 6px; }
+    .ingredient-card p { font-size: 0.82rem; color: var(--text-light); }
+    .ingredient-note {
+      background: var(--green-pale);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ===== REVIEWS ===== */
+    .reviews { background: var(--bg-gray); }
+    .review-list { display: grid; gap: 16px; }
+    .review-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .review-name { font-weight: 700; font-size: 0.9rem; }
+    .review-stars { color: #ffc107; font-size: 1rem; letter-spacing: 2px; }
+    .review-text { font-size: 0.9rem; line-height: 1.7; color: var(--text); }
+    .review-tag {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green);
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-top: 8px;
+      font-weight: 700;
+    }
+
+    /* ===== EXPERT ===== */
+    .expert-card {
+      background: #fff;
+      border: 2px solid var(--green-mid);
+      border-radius: 16px;
+      padding: 28px 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .expert-avatar {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, #b2dfdb, #80cbc4);
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+    }
+    .expert-body small { font-size: 0.78rem; color: var(--text-light); }
+    .expert-body h4 { font-size: 1rem; font-weight: 700; margin: 4px 0 10px; }
+    .expert-body p { font-size: 0.9rem; line-height: 1.7; }
+
+    /* ===== RESULT / CHART ===== */
+    .result { background: var(--green-pale); }
+    .result-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .stat-num {
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1;
+    }
+    .stat-unit { font-size: 0.8rem; }
+    .stat-label { font-size: 0.78rem; color: var(--text-light); margin-top: 6px; }
+    .result-note { font-size: 0.8rem; color: var(--text-light); text-align: center; }
+
+    /* ===== PRICE / ORDER ===== */
+    .price { background: #fff; }
+    .price-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .price-card {
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 16px;
+      text-align: center;
+      position: relative;
+    }
+    .price-card--recommended {
+      border-color: var(--accent);
+      background: #fff8f0;
+    }
+    .price-card .recommend-badge {
+      position: absolute;
+      top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .price-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 8px; color: var(--text-light); }
+    .price-card .price-num {
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+    .price-card .price-tax { font-size: 0.72rem; color: var(--text-light); }
+    .price-card .price-per { font-size: 0.82rem; color: var(--text-light); margin-top: 4px; }
+    .price-card .price-original {
+      font-size: 0.82rem;
+      color: #aaa;
+      text-decoration: line-through;
+      margin-top: 2px;
+    }
+    .price-card .price-off {
+      background: #ff1744;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+    .price-features {
+      list-style: none;
+      text-align: left;
+      margin-top: 12px;
+      font-size: 0.82rem;
+      color: var(--text);
+    }
+    .price-features li::before { content: '✓ '; color: var(--green); font-weight: 700; }
+    .price-features li + li { margin-top: 4px; }
+
+    .guarantee {
+      background: var(--green-pale);
+      border: 2px solid var(--green-mid);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin: 24px 0;
+    }
+    .guarantee h4 { font-size: 1rem; font-weight: 700; color: var(--green); margin-bottom: 8px; }
+    .guarantee p { font-size: 0.85rem; color: var(--text-light); line-height: 1.7; }
+
+    /* ===== FAQ ===== */
+    .faq { background: var(--bg-gray); }
+    .faq-list { display: grid; gap: 12px; }
+    .faq-item {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .faq-q {
+      padding: 16px 20px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      display: flex;
+      gap: 12px;
+      cursor: pointer;
+      align-items: flex-start;
+    }
+    .faq-q span:first-child {
+      color: var(--green);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .faq-a {
+      padding: 0 20px 16px 46px;
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* ===== COMPANY ===== */
+    .company { padding: 32px 0; border-top: 1px solid var(--border); }
+    .company table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .company td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .company td:first-child {
+      width: 35%;
+      color: var(--text-light);
+      white-space: nowrap;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.78rem;
+      line-height: 2;
+    }
+    .footer-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+    .footer-links a { color: #aaa; }
+    .footer-links a:hover { color: #fff; }
+
+    /* ===== NOTICE BAND ===== */
+    .notice-band {
+      background: #fffde7;
+      border-top: 2px solid #ffcc02;
+      border-bottom: 2px solid #ffcc02;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #795548;
+    }
+
+    /* ===== STEPS ===== */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .step {
+      text-align: center;
+      position: relative;
+    }
+    .step:not(:last-child)::after {
+      content: '▶';
+      position: absolute;
+      right: -10px; top: 24px;
+      color: var(--green-light);
+      font-size: 0.9rem;
+    }
+    .step-num {
+      width: 48px; height: 48px;
+      background: var(--green);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; font-weight: 700;
+      margin: 0 auto 10px;
+    }
+    .step h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
+    .step p { font-size: 0.78rem; color: var(--text-light); }
+
+    /* ===== MEDIA QUERIES ===== */
+    @media (max-width: 480px) {
+      .price-cards { grid-template-columns: 1fr; }
+      .result-stats { grid-template-columns: repeat(3, 1fr); }
+      .expert-card { flex-direction: column; }
+      .steps { grid-template-columns: 1fr; }
+      .step:not(:last-child)::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-logo">SLIM SUPPORT <span>PLUS</span></div>
+</header>
+
+<!-- NOTICE BAND -->
+<div class="notice-band">
+  &#127381; 定期初回限定 <strong>50%OFF</strong> ／ 送料無料 ／ いつでも解約可能
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">&#127807; 機能性表示食品</p>
+    <h1 class="hero-headline">
+      毎日の<em>体重・体脂肪ケア</em>が<br>
+      続けやすい習慣になる
+    </h1>
+    <p class="hero-sub">飲むだけ。たった1日2粒の"新習慣"。</p>
+
+    <div class="hero-product">
+      <div class="hero-product-img">&#127807;</div>
+      <div class="tag">機能性表示食品</div>
+      <h2 style="font-size:1.4rem;margin-top:8px;">スリムサポートプラス</h2>
+      <p style="font-size:0.88rem;color:var(--text-light);margin-top:8px;">有胞子性乳酸菌 × 難消化性デキストリン 配合</p>
+      <div class="hero-badges">
+        <span class="badge">GMOフリー</span>
+        <span class="badge">添加物不使用</span>
+        <span class="badge">国内製造</span>
+        <span class="badge">第三者機関検査済</span>
+      </div>
+    </div>
+
+    <a href="#order" class="cta-btn">
+      &#127381; 初回50%OFFで今すぐ試す
+      <small>&#10003; 送料無料 &#10003; いつでも解約OK</small>
+    </a>
+
+    <p class="hero-social-proof" style="margin-top:20px;">
+      シリーズ累計出荷数<br>
+      <strong>120万袋</strong>突破（発売から3年）
+    </p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem">
+  <div class="container">
+    <span class="tag tag--accent">こんなお悩みありませんか？</span>
+    <h2 class="section-title" style="margin-top:8px;">
+      「頑張っているのに<br>なかなか変わらない…」
+    </h2>
+    <div class="divider"></div>
+
+    <ul class="problem-list">
+      <li>食事制限をしても体重が落ちにくくなった</li>
+      <li>運動しても疲れるだけで結果が出ない</li>
+      <li>年齢とともに体型が変わってきた気がする</li>
+      <li>夕方になるとどか食いしてしまう</li>
+      <li>お腹まわりのぽっこりが気になる</li>
+      <li>続けやすいダイエットサポートが見つからない</li>
+    </ul>
+
+    <div class="problem-footer">
+      それは「腸内環境」と「脂肪代謝」の<br>
+      <strong>見直しのタイミングかもしれません</strong>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <span class="tag">そのお悩みに</span>
+    <h2 class="section-title" style="margin-top:8px;">
+      日本初＊の腸内フローラ改善で<br>
+      体脂肪をアプローチする新しい選択
+    </h2>
+    <div class="divider"></div>
+
+    <div class="intro-card">
+      <div style="font-size:2.5rem;margin-bottom:16px;">&#127807;</div>
+      <h3>スリムサポートプラスが選ばれる理由</h3>
+      <p>
+        腸内環境を整える「有胞子性乳酸菌」と、食後の血糖値上昇を抑える「難消化性デキストリン」を独自配合。
+        内側からアプローチする機能性表示食品として、毎日の食生活をサポートします。
+      </p>
+    </div>
+
+    <p style="font-size:0.75rem;color:var(--text-light);text-align:center;">
+      ＊2025年4月時点、有胞子性乳酸菌と難消化性デキストリン同時配合の機能性表示食品として（自社調べ）
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section features">
+  <div class="container">
+    <h2 class="section-title">3つの特長</h2>
+    <div class="divider"></div>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-num">1</div>
+        <div class="feature-body">
+          <h4>食後の血中中性脂肪の上昇を抑える</h4>
+          <p>機能性関与成分「難消化性デキストリン」が、食後に過剰な脂肪が吸収されるのをサポート。機能性表示食品として届出済みです。</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">2</div>
+        <div class="feature-body">
+          <h4>腸内環境を整え、毎日スッキリ</h4>
+          <p>「有胞子性乳酸菌」は熱や酸に強く生きたまま腸に届きやすい特性があります。善玉菌を増やし、腸のコンディションを整えます。</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">3</div>
+        <div class="feature-body">
+          <h4>食事と一緒に飲むだけ、簡単習慣</h4>
+          <p>1日2粒、食事のタイミングで水と一緒に飲むだけ。特別な食事制限は不要です。忙しい方にも続けやすい設計です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENTS -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">主要成分</h2>
+    <div class="divider"></div>
+
+    <div class="ingredient-grid">
+      <div class="ingredient-card">
+        <div class="ingredient-icon">&#127807;</div>
+        <h4>難消化性デキストリン<br>3,000mg</h4>
+        <p>食後の血中中性脂肪・血糖値上昇を抑える機能性関与成分。とうもろこし由来。</p>
+      </div>
+      <div class="ingredient-card">
+        <div class="ingredient-icon">&#129440;</div>
+        <h4>有胞子性乳酸菌<br>30億個</h4>
+        <p>胞子の鎧をまとった乳酸菌。熱・酸に強く腸まで届きやすい。</p>
+      </div>
+      <div class="ingredient-card">
+        <div class="ingredient-icon">&#127758;</div>
+        <h4>ビフィズス菌BB-12<br>20億個</h4>
+        <p>腸内フローラのバランス維持をサポートする代表的な善玉菌。</p>
+      </div>
+      <div class="ingredient-card">
+        <div class="ingredient-icon">&#127819;</div>
+        <h4>食物繊維<br>（イヌリン）800mg</h4>
+        <p>腸内の善玉菌のエサとなるプレバイオティクス成分。菊芋由来。</p>
+      </div>
+    </div>
+
+    <div class="ingredient-note">
+      &#9888; 本品は食品衛生法に基づき国内のGMP認定工場で製造しています。本品は特定保健用食品ではなく、機能性表示食品（届出番号：F-XXXX）です。
+    </div>
+  </div>
+</section>
+
+<!-- RESULT -->
+<section class="section result">
+  <div class="container">
+    <h2 class="section-title">飲み続けた方のリアルな結果</h2>
+    <div class="divider"></div>
+
+    <div class="result-stats">
+      <div class="stat-card">
+        <div class="stat-num">92<span class="stat-unit">%</span></div>
+        <div class="stat-label">継続満足度<br>（3ヶ月後）</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">-3.2<span class="stat-unit">kg</span></div>
+        <div class="stat-label">平均体重変化<br>（3ヶ月）</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">88<span class="stat-unit">%</span></div>
+        <div class="stat-label">お腹スッキリ<br>実感率</div>
+      </div>
+    </div>
+
+    <p class="result-note">
+      ＊当社モニター調査（n=200名、3ヶ月飲用後のアンケート結果）<br>
+      個人差があります。
+    </p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews">
+  <div class="container">
+    <h2 class="section-title">お客様の声</h2>
+    <div class="divider"></div>
+
+    <div class="review-list">
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-name">T.M さん（43歳・女性）</span>
+          <span class="review-stars">★★★★★</span>
+        </div>
+        <p class="review-text">
+          産後から体重が戻らず悩んでいました。飲み始めて1ヶ月で体の変化を感じ、3ヶ月後には服のサイズが1サイズ下がりました！腸の調子もよくなり、毎朝スッキリです。
+        </p>
+        <span class="review-tag">継続3ヶ月</span>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-name">K.S さん（38歳・女性）</span>
+          <span class="review-stars">★★★★★</span>
+        </div>
+        <p class="review-text">
+          食事制限が続かない私でも、これを飲むだけで意識が変わりました。お腹周りが少しずつすっきりしてきて、夫にも「変わったね」と言われました。
+        </p>
+        <span class="review-tag">継続2ヶ月</span>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-name">A.Y さん（51歳・女性）</span>
+          <span class="review-stars">★★★★☆</span>
+        </div>
+        <p class="review-text">
+          更年期以降、どんな方法を試しても体重が落ちなかったのに、このサプリを飲み始めてから腸の動きが変わった気がします。まだ飲み始めて1ヶ月ですが、続けてみようと思います。
+        </p>
+        <span class="review-tag">継続1ヶ月</span>
+      </div>
+    </div>
+
+    <p style="font-size:0.78rem;color:var(--text-light);text-align:center;margin-top:16px;">
+      ＊個人の感想です。効果・効能を保証するものではありません。
+    </p>
+  </div>
+</section>
+
+<!-- EXPERT -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">専門家からのコメント</h2>
+    <div class="divider"></div>
+
+    <div class="expert-card">
+      <div class="expert-avatar">&#128104;&#8205;&#9877;&#65039;</div>
+      <div class="expert-body">
+        <small>消化器内科医 / 腸内フローラ研究</small>
+        <h4>田中 誠一 先生</h4>
+        <p>
+          腸内環境と体重管理の関係は、近年多くの研究で示されています。腸内細菌叢のバランスが乱れると脂肪の蓄積が進みやすくなることがわかっており、乳酸菌と食物繊維の同時摂取は理にかなったアプローチです。継続することで内側からの変化が期待できます。
+        </p>
+      </div>
+    </div>
+
+    <div class="expert-card">
+      <div class="expert-avatar">&#128105;&#8205;&#9877;&#65039;</div>
+      <div class="expert-body">
+        <small>管理栄養士 / 分子栄養学</small>
+        <h4>鈴木 明子 先生</h4>
+        <p>
+          難消化性デキストリンは機能性関与成分として、食後の中性脂肪上昇を抑える働きが科学的に認められています。毎日の食事と一緒に摂ることで、無理なく脂質代謝をサポートできるのが大きな利点です。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO ORDER -->
+<section class="section" style="background:var(--bg-gray);">
+  <div class="container">
+    <h2 class="section-title">ご注文の流れ</h2>
+    <div class="divider"></div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>プランを選ぶ</h4>
+        <p>定期コース or 通常購入</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>フォーム入力</h4>
+        <p>氏名・住所・支払い方法</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>ご自宅に届く</h4>
+        <p>最短翌日発送</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE / ORDER -->
+<section class="section price" id="order">
+  <div class="container">
+    <h2 class="section-title">今すぐ始める</h2>
+    <div class="divider"></div>
+
+    <div class="price-cards">
+      <!-- recommended -->
+      <div class="price-card price-card--recommended">
+        <span class="recommend-badge">&#9733; 一番人気</span>
+        <h4>定期コース（60日分）</h4>
+        <div class="price-num">2,980<span style="font-size:0.9rem;">円</span></div>
+        <div class="price-tax">（税込 3,278円）</div>
+        <div class="price-original">通常価格 6,480円</div>
+        <span class="price-off">初回 50%OFF</span>
+        <div class="price-per" style="margin-top:8px;">1日あたり約55円</div>
+        <ul class="price-features">
+          <li>送料無料</li>
+          <li>2回目以降30%OFF</li>
+          <li>いつでも解約OK</li>
+          <li>Amazon Pay対応</li>
+        </ul>
+      </div>
+      <!-- normal -->
+      <div class="price-card">
+        <h4>通常購入（30日分）</h4>
+        <div class="price-num">3,480<span style="font-size:0.9rem;">円</span></div>
+        <div class="price-tax">（税込 3,828円）</div>
+        <div style="font-size:0.75rem;color:#aaa;margin-top:4px;">送料 550円</div>
+        <div class="price-per">1日あたり約128円</div>
+        <ul class="price-features" style="margin-top:20px;">
+          <li>お試しに最適</li>
+          <li>縛りなし</li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="#" class="cta-btn">
+      &#127381; 定期初回50%OFFで申し込む
+      <small>&#10003; 送料無料 &#10003; 2回目以降もお得 &#10003; いつでも解約可</small>
+    </a>
+
+    <div class="guarantee">
+      <h4>&#128737; 30日間全額返金保証</h4>
+      <p>
+        お試しいただいて満足いただけない場合は、<strong>お届けから30日以内</strong>にご連絡ください。
+        全額返金いたします（初回お届け分1本に限る）。
+      </p>
+    </div>
+
+    <div style="background:var(--green-pale);border-radius:12px;padding:20px;font-size:0.85rem;color:var(--text-light);line-height:1.8;">
+      <strong style="color:var(--green);">&#10003; 定期コースについて</strong><br>
+      ・2回目以降は30%OFFの4,536円（税込）でお届けします<br>
+      ・お届け間隔は30日・60日から選択可能<br>
+      ・次回お届け日の10日前までにお電話またはマイページからいつでも解約できます<br>
+      ・購入回数の縛りはありません（初回のみでも解約可）
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="container">
+    <h2 class="section-title">よくあるご質問</h2>
+    <div class="divider"></div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span>Q</span><span>いつ飲めばいいですか？</span></div>
+        <div class="faq-a">食事と一緒にお飲みください。朝食・昼食・夕食、どのタイミングでも構いません。毎日同じタイミングで飲む習慣をつけると続けやすくなります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q</span><span>副作用はありますか？</span></div>
+        <div class="faq-a">食品ですので通常の副作用はありません。ただし、まれにお腹が緩くなる場合があります。その際は量を減らすか、医師にご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q</span><span>いつ頃から効果を感じられますか？</span></div>
+        <div class="faq-a">個人差がありますが、腸内環境の変化を感じるのは2〜4週間が目安です。体重・体脂肪への変化は継続3ヶ月を目標にお飲みいただくことをおすすめします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q</span><span>薬との併用は大丈夫ですか？</span></div>
+        <div class="faq-a">現在薬を服用中の方は、念のため医師や薬剤師にご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q</span><span>解約はいつでもできますか？</span></div>
+        <div class="faq-a">はい、購入回数の縛りはありません。次回お届け日の10日前までにフリーダイヤルまたはマイページよりお手続きください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q</span><span>支払い方法は何が使えますか？</span></div>
+        <div class="faq-a">クレジットカード（VISA・Mastercard・JCB・AMEX）、Amazon Pay、代金引換（+330円）がご利用いただけます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section" style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);text-align:center;">
+  <div class="container">
+    <h2 class="section-title">今日から始める、<br>内側からのケア。</h2>
+    <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:28px;">
+      毎日1日2粒。それだけで腸と向き合う<br>新しい習慣を始めましょう。
+    </p>
+    <a href="#order" class="cta-btn">
+      &#127381; 定期初回50%OFFで申し込む
+      <small>&#10003; 送料無料 &#10003; いつでも解約OK &#10003; 30日間返金保証</small>
+    </a>
+  </div>
+</section>
+
+<!-- COMPANY INFO -->
+<section class="company">
+  <div class="container">
+    <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;">特定商取引法に基づく表示</h3>
+    <table>
+      <tr><td>販売業者</td><td>株式会社〇〇ウエルネス</td></tr>
+      <tr><td>代表者</td><td>代表取締役 〇〇 〇〇</td></tr>
+      <tr><td>所在地</td><td>〒100-0000 東京都〇〇区〇〇1-1-1</td></tr>
+      <tr><td>電話番号</td><td>0120-XXX-XXX（受付 9:00〜18:00／土日祝除く）</td></tr>
+      <tr><td>メール</td><td>support@example.com</td></tr>
+      <tr><td>販売価格</td><td>各商品ページ記載の価格（税込）</td></tr>
+      <tr><td>送料</td><td>定期コース：無料 / 通常購入：550円（沖縄・離島除く）</td></tr>
+      <tr><td>お届け</td><td>ご注文確認後、2〜5営業日以内に発送</td></tr>
+      <tr><td>返品・返金</td><td>初回のみ30日間全額返金保証。お客様都合の返品は未開封の場合のみ対応（送料お客様負担）。</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">特定商取引法に基づく表示</a>
+    <a href="#">プライバシーポリシー</a>
+    <a href="#">利用規約</a>
+    <a href="#">お問い合わせ</a>
+  </div>
+  <p>Copyright &copy; 2025 株式会社〇〇ウエルネス All Rights Reserved.</p>
+  <p style="margin-top:8px;font-size:0.72rem;color:#888;">
+    本品は機能性表示食品です（届出番号：F-XXXX）。本品は特定保健用食品ではありません。<br>
+    食生活は、主食、主菜、副菜を基本に、食事のバランスを。
+  </p>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="float-cta">
+  <a href="#order" class="cta-btn">
+    &#127381; 今すぐ定期初回50%OFFで申し込む
+    <small>&#10003; 送料無料 &#10003; いつでも解約OK</small>
+  </a>
+</div>
+
+<!-- Smooth scroll padding for floating CTA -->
+<style>
+  html { scroll-padding-bottom: 80px; }
+  body { padding-bottom: 80px; }
+</style>
+
+</body>
+</html>
