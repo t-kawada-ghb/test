@@ -4,7 +4,11 @@ This file provides guidance to AI assistants (Claude and others) working with th
 
 ## Repository Status
 
-This is a **newly initialized repository** with no committed code yet. This CLAUDE.md will be updated as the codebase evolves.
+This repository contains a **要件定義ジェネレーター** — Next.js web app that generates structured requirements definition documents from creative project overviews using Claude API.
+
+- **Framework**: Next.js 15 (App Router), TypeScript, Tailwind CSS v4
+- **AI**: Anthropic Claude API (`@anthropic-ai/sdk`)
+- **Setup**: `npm install` → copy `.env.example` to `.env.local` (set `ANTHROPIC_API_KEY`) → `npm run dev`
 
 ---
 
